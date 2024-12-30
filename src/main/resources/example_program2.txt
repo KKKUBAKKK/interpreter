@@ -1,0 +1,20 @@
+x = 1
+print x
+scope 
+{
+ x = 2
+ print x
+ scope 
+ {
+   scope { x = 4 }
+   scope { x = 5 
+           print x }
+   x = 3
+   y = x
+   print x
+   print y
+ }
+ print x
+ print y
+}
+print x
